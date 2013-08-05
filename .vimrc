@@ -114,6 +114,12 @@
   autocmd FileType javascript setlocal omnifunc=javascriptcomplete#CompleteJS
   autocmd FileType python setlocal omnifunc=pythoncomplete#Complete
   autocmd FileType xml setlocal omnifunc=xmlcomplete#CompleteTags
+  augroup MyXML
+    autocmd!
+    autocmd Filetype xml inoremap <buffer> </ </<C-x><C-o>
+    autocmd Filetype html inoremap <buffer> </ </<C-x><C-o>
+    autocmd Filetype eruby inoremap <buffer> </ </<C-x><C-o>
+  augroup END
 
   " Enable heavy omni completion.
   if !exists('g:neocomplcache_omni_patterns')
