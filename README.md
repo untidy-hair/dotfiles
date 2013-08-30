@@ -12,6 +12,7 @@ ln -sb dotfiles/.bashrc .
 ln -sb dotfiles/.bashrc_custom .
 ln -sb dotfiles/.vimrc .
 ln -sb dotfiles/.jshintrc .
+ln -sb dotfiles/.gitconfig .
 ```
 
 See also http://github.com/untidy-hair/setup to install prerequisite
