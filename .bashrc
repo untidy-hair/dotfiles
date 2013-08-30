@@ -188,12 +188,12 @@ alias md='mkdir'
 alias cl='clear'
 alias du='du -ch --max-depth=1'
 alias treeacl='tree -A -C -L 2'
+alias vi='vim'
+alias v='vim -R'
 
 # 2.3) Text and editor commands
 export EDITOR='vim'
 export VISUAL='vim'
-export vi='vim'
-export v='vim -R'
 
 # 2.4) grep options
 export GREP_OPTIONS='--color=auto'

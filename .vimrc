@@ -37,7 +37,9 @@
  Bundle 'scrooloose/syntastic'
  " Slime Vim
  Bundle 'jpalardy/vim-slime'
-
+ " Node.js 
+ Bundle 'moll/vim-node'
+ 
  filetype plugin indent on     " required!
  "
  " Brief help
@@ -78,14 +80,20 @@
   let g:neocomplcache_keyword_patterns['default'] = '\h\w*'
 
   " Plugin key-mappings.
-  imap <C-k>     <Plug>(neocomplcache_snippets_expand)
-  smap <C-k>     <Plug>(neocomplcache_snippets_expand)
+  imap <C-k>     <Plug>(neosnippet_expand_or_jump)
+  smap <C-k>     <Plug>(neosnippet_expand_or_jump)
+  xmap <C-k>     <Plug>(neosnippet_expand_target)
   inoremap <expr><C-g>     neocomplcache#undo_completion()
   inoremap <expr><C-l>     neocomplcache#complete_common_string()
 
   " SuperTab like snippets behavior.
+  imap <expr><TAB> neosnippet#expandable_or_jumpable() ?
+        \ "\<Plug>(neosnippet_expand_or_jump)"
+        \: pumvisible() ? "\<C-n>" : "\<TAB>"
+  smap <expr><TAB> neosnippet#expandable_or_jumpable() ?
+        \ "\<Plug>(neosnippet_expand_or_jump)"
+        \: "\<TAB>"
 
-  "imap <expr><TAB> neocomplcache#sources#snippets_complete#expandable() ? "\<Plug>(neocomplcache_snippets_expand)" : pumvisible() ? "\<C-n>" : "\<TAB>"
 
   " Recommended key-mappings.
   " <CR>: close popup and save indent.
@@ -142,6 +150,9 @@
 
   " Slime.vim
   let g:slime_target = "tmux"
+
+  " NERDTree
+  let NERDTreeDirArrows = 0
 
 :set tabstop=2
 :set shiftwidth=2
