@@ -31,6 +31,7 @@
   dr = "!f() { git diff -w "$1"^.."$1"; }; f"
   diffr = "!f() { git diff "$1"^.."$1"; }; f"
   branch = branch -ra
+  br = branch
 
   #reset commands
   r = reset
@@ -39,4 +40,6 @@
   rh = reset --hard
   rh1 = reset HEAD^ --hard
   rh2 = reset HEAD^^ --hard
-
+  rs = reset --soft
+  rs1 = reset HEAD^ --soft
+  rs2 = reset HEAD^^ --soft 
