@@ -42,4 +42,9 @@
   rh2 = reset HEAD^^ --hard
   rs = reset --soft
   rs1 = reset HEAD^ --soft
-  rs2 = reset HEAD^^ --soft 
+  rs2 = reset HEAD^^ --soft
+
+  #stash
+  ss = stash save
+  sp = stash pop
+  sl = stash list
