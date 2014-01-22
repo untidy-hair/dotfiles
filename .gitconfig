@@ -48,3 +48,6 @@
   ss = stash save
   sp = stash pop
   sl = stash list
+
+[core]
+  editor = vim
