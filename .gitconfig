@@ -9,6 +9,7 @@
   ci = commit
   co = checkout
   ca = commit --amend
+  cac = commit --amend -C HEAD
   filelog = log -u
   fl = log -u
   #List Commands
