@@ -41,6 +41,7 @@
  Bundle 'moll/vim-node'
  
  filetype plugin indent on     " required!
+ syntax on
  "
  " Brief help
  " :BundleList      - list configured bundles
