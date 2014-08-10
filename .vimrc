@@ -155,8 +155,9 @@
   " NERDTree
   let NERDTreeDirArrows = 0
 
+:set hlsearch
 :set tabstop=2
 :set shiftwidth=2
-:set expandtab
+:set expandtab "if you want to enter a real tab character use Ctrl-V<Tab> key sequence
 :set backspace=2
-:set clipboard=unnamed
+":set clipboard=unnamed
