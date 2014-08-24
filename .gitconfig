@@ -44,6 +44,7 @@
   rs = reset --soft
   rs1 = reset HEAD^ --soft
   rs2 = reset HEAD^^ --soft
+  unstage = reset
 
   #stash
   ss = stash save
