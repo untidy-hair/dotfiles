@@ -140,6 +140,8 @@
   let g:neocomplcache_omni_patterns.c = '\%(\.\|->\)\h\w*'
   let g:neocomplcache_omni_patterns.cpp = '\h\w*\%(\.\|->\)\h\w*\|\h\w*::'
 
+  let g:neocomplcache_force_overwrite_completefunc=1
+
   "syntastic {{{
   let g:syntastic_mode_map = {
     \  'mode': 'active',
