@@ -4,6 +4,10 @@
   email = untidyhair@gmail.com
 
 [alias]
+  a = add
+  f = fetch
+  m = merge --no-ff
+  p = push
   st = status -s
   cl = clone
   ci = commit
@@ -45,6 +49,7 @@
   rs1 = reset HEAD^ --soft
   rs2 = reset HEAD^^ --soft
   unstage = reset
+  u = reset
 
   #stash
   ss = stash save
